@@ -25,4 +25,4 @@ COPY --from=builder ${ROOT}/${APP_NAME} ${APP_NAME}
 RUN apk add --no-cache ca-certificates
 
 EXPOSE 8080
-#ENTRYPOINT ["/scstore"]
+ENTRYPOINT ["/scstore"]
