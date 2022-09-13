@@ -1,3 +1,4 @@
+#Original Version
 FROM golang:1.18.1-alpine3.15 as builder
 
 LABEL service_name="scstore"
@@ -24,4 +25,4 @@ COPY --from=builder ${ROOT}/${APP_NAME} ${APP_NAME}
 RUN apk add --no-cache ca-certificates
 
 EXPOSE 8080
-ENTRYPOINT ["/scstore"]
+#ENTRYPOINT ["/scstore"]
