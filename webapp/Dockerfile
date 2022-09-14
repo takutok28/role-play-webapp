@@ -1,4 +1,5 @@
 #Original Version
+#with entrypoint
 FROM golang:1.18.1-alpine3.15 as builder
 
 LABEL service_name="scstore"
